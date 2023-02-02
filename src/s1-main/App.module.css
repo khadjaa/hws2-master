@@ -1,11 +1,19 @@
 .App {
-    --header_height: 60px;
+
+    background: #FFFFFF;
 }
 
 .hw {
-
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hwTitle {
+  text-align: center;
+    color: #000000;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
 }
