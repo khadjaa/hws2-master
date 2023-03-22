@@ -1,2 +1,11 @@
 .container {
+    width: 1270px;
+    height: 373px;
+    left: 0;
+    top: 519px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    gap: 127px;
+    padding: 42px;
 }

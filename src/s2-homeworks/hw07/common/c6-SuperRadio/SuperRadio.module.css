@@ -13,6 +13,13 @@
 
 .options {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #58ACFF;
 }
