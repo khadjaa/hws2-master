@@ -39,7 +39,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
         if (onChangeOption){
             //console.log(e.currentTarget.value  + ' SelectCallBack')
             console.log('value => ', +e.currentTarget.value)
-           // console.log('typeof => ', typeof e.currentTarget.value)
+            // console.log('typeof => ', typeof e.currentTarget.value)
             //console.log('typeof => ', typeof +e.currentTarget.value)
             onChangeOption(+e.currentTarget.value)
         }
