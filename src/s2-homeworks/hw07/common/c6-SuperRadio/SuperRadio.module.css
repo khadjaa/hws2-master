@@ -14,12 +14,11 @@
 .options {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 22px;
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    background-color: #58ACFF;
 }
