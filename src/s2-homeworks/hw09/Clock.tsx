@@ -36,10 +36,11 @@ function Clock() {
         }
     }
 
-    const stringTime = addZero(date.getHours()) +':'+  date.getMinutes() +':'+  date.getSeconds() || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
+    const stringTime = addZero(date.getHours()) +':'+  addZero(date.getMinutes()) +':'+  addZero(date.getSeconds()) || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
     const stringDate1 = new Intl.DateTimeFormat('en', {day:'numeric', month: 'numeric', year: 'numeric'}).format() || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
-    const stringDate = addZero(date.getDate()) + '.' + date.getMonth() + '.' + date.getUTCFullYear() || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
-
+    const stringDate = addZero(date.getDate()) + '.' + addZero(date.getMonth() + 1) + '.' + addZero(date.getUTCFullYear()) || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
+    console.log(stringDate1)
+    console.log(date.getMonth())
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
     const stringDay = new Intl.DateTimeFormat('en', {weekday: 'long'}).format() || <br/> // пишут студенты
     const stringMonth =  new Intl.DateTimeFormat('en', {month: 'long'}).format() || <br/> // пишут студенты
