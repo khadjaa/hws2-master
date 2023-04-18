@@ -4,13 +4,21 @@
 }
 
 .hw {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hwTitle {
-  text-align: center;
+    text-align: center;
     color: #000000;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
 }
 
 .container {
