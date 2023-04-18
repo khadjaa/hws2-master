@@ -1,3 +1,51 @@
 .loader {
-    /*свг и/или анимация*/
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    margin: 40px;
+}
+
+.loader::before  {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid rgb(218, 77, 198);
+    border-top-color: #9b2b8b;
+    animation: spin 1s linear infinite;
+    position: absolute;
+}
+
+.loader::after   {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-top-color: #961e85;
+    animation: pulse 1.5s ease-in-out infinite;
+    position: absolute;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
 }
