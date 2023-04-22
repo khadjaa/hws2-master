@@ -24,15 +24,7 @@ function HW11() {
         } else {
             setValue1(value)
         }
-        // setValue(newValue as number[]);
-        // if(typeof value === 'number'){
-        //     setValue1(value)
-        // } else {
-        //     setValue1(value[0])
-        //     setValue2(value[1])
-        // }
     }
-
 
     return (
         <div id={'hw11'}>
